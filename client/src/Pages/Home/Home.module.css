@@ -1,0 +1,28 @@
+
+.cardWrapper {
+    margin-top: 7rem;
+}
+
+.text {
+    color: #C4C5C5;
+    line-height: 1.4rem;
+    width: 350px;
+    margin: 0 auto;
+    font-family: "SF-Pro-Display-Regular.otf";
+    /* letter-spacing: 1px; */
+    margin-bottom: 30px;
+}
+
+.links {
+    text-decoration: none;
+    color: #0077FF;
+}
+.links:focus {
+    text-decoration: underline;
+}
+
+.links span:first-child {
+    margin-right: 3px;
+    
+}
+

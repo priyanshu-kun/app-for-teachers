@@ -1,0 +1,26 @@
+.btn {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    width: 260px;
+    padding: 10px 0;
+    border-radius: 50px;
+    border: none;
+    background-color: #0077FF;
+    font-family: "SF-Pro-Display-Bold.otf";
+    margin: 0 auto 20px auto;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn:active,.btn:focus {
+    box-shadow: 0 0 0 2px rgb(255, 255, 255);
+}
+.btn:hover {
+    background-color:  #0059be;
+}
+
+.btn span {
+    margin-right: 3px;
+}
