@@ -1,2 +1,1 @@
-# coderHouse
-The clubHouse clone...
+# A app for teachers
