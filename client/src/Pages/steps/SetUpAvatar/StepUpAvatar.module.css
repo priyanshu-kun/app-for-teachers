@@ -1,0 +1,41 @@
+.subHeading {
+    color: #c4c5c5;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "SF-Pro-Display-Regular.otf";
+    font-size: 0.8rem;
+}
+
+.avatarRapper {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    box-shadow: 0 0 0 5px #0077FF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.avatarRapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.avatarInput {
+    display: none;
+}
+
+.avatarInput + label {
+    font-family: "SF-Pro-Display-Regular.otf";
+    margin: 30px 0;
+    display: inline-block;
+    cursor: pointer;
+    color: #0077FF;
+    font-size: 0.8rem;
+}
+.avatarInput + label:hover {
+    text-decoration: underline;
+}

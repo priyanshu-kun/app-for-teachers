@@ -1,0 +1,15 @@
+.cardWrapper {
+    margin-top: 7rem;
+}
+
+.bottomParagraph {
+    font-family: "SF-Pro-Display-Regular.otf";
+    width: 60%;
+    line-height: 1.2rem;
+    color: #9c9c9c;
+    margin-top: -1.3rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.8rem;
+}
