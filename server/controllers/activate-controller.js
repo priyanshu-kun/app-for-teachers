@@ -5,12 +5,14 @@ const userService = require('../services/user-service');
 
 class ActivateController {
     async activate(req, res) {
-        const {name, avatar} = req.body;
-        if (!name || !avatar) {
+        const {userType,name, avatar} = req.body;
+        // console.log("before: ",req.body)
+        if (!userType || !name || !avatar) {
             return res.status(400).json({ message: "All fields are required" })
         }
-        const buffer = Buffer.from(avatar.replace(/^data:image\/png;base64,/, ""), "base64")
-        console.log(buffer)
+        // console.log(req.body)
+
+        const buffer = Buffer.from(avatar.replace(/^data:image\/(png|jpeg|jpg|gif);base64,/, ""), "base64")
         // create image path
         const imagePath = `${Date.now()}.${Math.round(Math.random() * 1e9)}.png`
         // console.log("kaboom2")
@@ -29,12 +31,12 @@ class ActivateController {
         try {
             // update user
             const user = await userService.findUser({ _id: userId })
-            console.log(user)
             if (!user) {
                 return req.status(404).json({ message: "user not found" })
             }
             user.activated = true;
             user.name = name
+            user.userType = userType
             user.avatar = `/storage/${imagePath}`
             user.save()
             res.json({ user: new userDto(user),auth: true })
